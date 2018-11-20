@@ -1,0 +1,56 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\usepackage[maxbibnames=99,
+backend=biber,
+style=numeric,
+sorting=ydnt
+]{biblatex}
+
+\addbibresource{books.bib} %Imports bibliography file
+
+\author{\textbf{Dr. Tegawend\'e F. Bissyand\'e} \\ 
+{\em Research Scentist @SnT, Unversty of Luxembourg}}
+\title{{Full List of Publications - November 2018}}
+\date{}
+
+
+\begin{document}
+
+\maketitle
+
+% \tableofcontents
+
+\section*{Google Scholar Bibliometry}
+
+A snapshot of my Google Scholar profile metrics on November 20, 2018:
+\begin{center}
+	\url{https://scholar.google.fr/citations?user=t73Mqm8AAAAJ&hl=en}
+\end{center}
+
+\begin{figure}[!h]
+\centering
+	\includegraphics[width=7cm]{screenshot_Nov2018.png}
+\end{figure}
+\section*{DBLP recorded publications}
+
+
+\nocite{*} 
+
+\medskip
+
+%Filters bibliography
+\printbibliography[sorting=ydnt,heading=subbibintoc,title={Thesis, Book chapter, Proceedings edition}]
+%\newrefcontext[sorting=ydnt]
+%\printbibliography[type=book,title={Book Editions}]
+%\newrefcontext[sorting=ydnt]
+%\printbibliography[type=inproceedings,title={Peer-reviewed Conference Papers}]
+
+% \printbibliography[keyword={physics},title={Physics-related only}]
+% \printbibliography[keyword={latex},title={\LaTeX-related only}]
+
+\end{document}

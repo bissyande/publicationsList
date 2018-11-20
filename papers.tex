@@ -1,0 +1,45 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\usepackage[maxbibnames=99,
+backend=biber,
+style=numeric,
+sorting=ydnt
+]{biblatex}
+
+\addbibresource{papers.bib} %Imports bibliography file
+
+% \author{\textbf{Dr. Tegawend\'e F. Bissyand\'e} \\ 
+% {\em Research Scentist @SnT, Unversty of Luxembourg}}
+% \title{{Full List of Publications - November 2018}}
+\title{}
+\date{}
+
+
+\begin{document}
+
+\maketitle
+\vspace{-2cm}
+
+% \tableofcontents
+
+
+\nocite{*} 
+
+\medskip
+
+%Filters bibliography
+%\printbibliography[sorting=ydnt,heading=subbibintoc,type=article,title={Journal Publications}]
+%\newrefcontext[sorting=ydnt]
+%\printbibliography[type=book,title={Book Editions}]
+%\newrefcontext[sorting=ydnt]
+\printbibliography[sorting=ydnt,type=inproceedings,title={Peer-reviewed Conference Papers}]
+
+% \printbibliography[keyword={physics},title={Physics-related only}]
+% \printbibliography[keyword={latex},title={\LaTeX-related only}]
+
+\end{document}
